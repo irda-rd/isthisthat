@@ -3,9 +3,9 @@
 #' @param x, object 1 to compare (vector, \code{matrix}, \code{data.frame})
 #' @param y, object 2 to compare (vector, \code{matrix}, \code{data.frame})
 #' @param tol tolerance used when considering numeric values equal.
-#' @details The length or dimension of \code{x} and \code{y} must be the same. The function allows to determine if the difference between two numeric is smaller than a \code{tol}. It also allows to compare a \code{numeric} with a number represented as \code{character}. The latter, if corresponding to a number, are converted to numeric then rounded at 15 significative numbers (the recommanded limit for doubles in the IEEE-754 standard). Comparison is made as \code{character} to avoid coercion of the initial character vector, scientific notation is also handled.
+#' @details The length or dimension of \code{x} and \code{y} must be the same. The function allows to determine if the difference between two numeric is smaller than \code{tol}. It also allows to compare a \code{numeric} with \code{character} representing a number. The latter, if corresponding to a number, are converted to numeric then rounded at 15 significative numbers (the recommanded limit for doubles in the IEEE-754 standard). Comparison is made as \code{character} to avoid coercion of the initial character vector. Scientific notation is also handled.
 #' The approach allows to avoid truncating problems associated with \code{as.character} for number with several decimals, precision problems with \code{numeric} as well as notation problems. The function refer to \code{isEqual} for any other case.
-#' @return If \code{x} and \code{y} are vectors, a \code{logical} vector of the same length is returned; if \code{x} and \code{y} are of class \code{matrix} or \code{data.frame}, a \code{logical} matrix of the same dimension is returned.
+#' @return If \code{x} and \code{y} are vectors, a \code{logical} vector of the same length is returned; if \code{x} and \code{y} are of class \code{matrix} or \code{data.frame}, a \code{logical matrix} of the same dimension is returned.
 #' @import stringr
 #' @export
 #' @examples
@@ -18,7 +18,7 @@
 #' isAlmostEqual(x, y)
 #'
 #' #For a numeric and a character vector 
-#' ##(5th case have more than 15 significative numbers, 6th case = is a change in notation)
+#' ##(5th case have more than 15 significative numbers, 6th case is a change in notation)
 #' xChar <- c(NA, "1", "1.1", "1.000000001", "123456789.123456789", "1000000")
 #' isEqual(x, xChar)
 #' isAlmostEqual(x, xChar)

@@ -8,7 +8,7 @@
 #' x <- c("2019-06-20", "2019-06-32", "43636", NA, "2019/06/20")
 #' isStringADate(x)
 #'
-isStringADate <- function(x, format = ("%Y-%m-%d")){
+isStringADate <- function(x, format = "%Y-%m-%d"){
   #Definition of the yyyy-mm-dd pattern for grepl
   year <- "\\d{4}"
   month <- "\\d{2}"
