@@ -2,12 +2,12 @@
 % Please edit documentation in R/isNumericADecimal.R
 \name{isNumericADecimal}
 \alias{isNumericADecimal}
-\title{Identify if numbers are decimals numbers}
+\title{Identify if numbers are decimal numbers}
 \usage{
 isNumericADecimal(x, tol = .Machine$double.eps^0.5)
 }
 \arguments{
-\item{x}{vector of class \code{numeric}}
+\item{x}{vector of class \code{numeric}.}
 
 \item{tol}{tolerance used when considering numeric values equal.}
 }
@@ -18,7 +18,7 @@ Return a \code{logical} vector indicating for each element if it correspond to a
 Identify if elements of a \code{numeric} vector are decimal numbers.
 }
 \details{
-The function also return \code{FALSE} for \code{NA}. Code in part taken from the example of the function \code{integer}.
+The function also return \code{FALSE} for \code{NA}. The code is in part taken from the example of the function \code{integer}.
 }
 \examples{
 x <- c(1, 1.1, 0.1, 1.0, 1.00000001, NA)

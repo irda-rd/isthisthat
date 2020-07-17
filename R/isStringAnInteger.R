@@ -1,6 +1,6 @@
 #' @title Identify if a string is an integer
-#' @description Check if elements of a \code{character} vector are integers
-#' @param x \code{character} vector
+#' @description Check if elements of a \code{character} vector are integers.
+#' @param x \code{character} vector.
 #' @return Return a \code{logical} vector indicating, for each element of \code{x}, if the string correspond to an integer.
 #' @details Use the function \code{isStringSciNumber} to identify numbers in their scientific notation.
 #' @export

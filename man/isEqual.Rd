@@ -7,9 +7,9 @@
 isEqual(x, y)
 }
 \arguments{
-\item{x, }{object 1 to compare (vector, \code{matrix}, \code{data.frame})}
+\item{x}{object 1 to compare (vector, \code{matrix}, \code{data.frame}).}
 
-\item{y, }{object 2 to compare (vector, \code{matrix}, \code{data.frame})}
+\item{y}{object 2 to compare (vector, \code{matrix}, \code{data.frame}).}
 }
 \value{
 If \code{x} and \code{y} are vectors, a \code{logical} vector of the same length is returned; if \code{x} and \code{y} are of class \code{matrix} or \code{data.frame}, a \code{logical} matrix of the same dimension is returned.

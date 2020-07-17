@@ -7,7 +7,7 @@
 isNumericAnInteger(x, tol = .Machine$double.eps^0.5)
 }
 \arguments{
-\item{x}{vector of class \code{numeric}}
+\item{x}{vector of class \code{numeric}.}
 
 \item{tol}{tolerance used when considering numeric values equal.}
 }

@@ -4,17 +4,18 @@
 \alias{isStringCanBeADate}
 \title{Identify if a string can be converted into a date}
 \usage{
-isStringCanBeADate(x, origin = as.Date("1899-12-30"),
-  format = ("\%Y-\%m-\%d"), warning = FALSE)
+isStringCanBeADate(x, format = ("\%Y-\%m-\%d"), warning = FALSE)
 }
 \arguments{
-\item{x}{vecteur, \code{matrix} ou \code{data.frame} de \code{character} ou \code{numeric}.}
+\item{x}{\code{character} vector.}
+
+\item{warning}{\code{logical} indicating if a warning must be sent if any element cannot be converted (\code{FALSE} by default).}
 }
 \value{
 Return a \code{logical} vector indicating, for each element of \code{x}, if the string can be converted into a \code{Date}.
 }
 \description{
-Check if a vector, \code{matrix} or \code{data.frame} of class \code{numeric} or \code{character} can be converted into a \code{Date}.
+Check if elements of a \code{character} vector can be converted into a \code{Date}. The function check both string corresponding to a date in the specified format or a number, for a representation given an origin.
 }
 \details{
 String representing valid dates, according to the specified format, numbers and \code{NA} (but not "NA") are considered to be convertible into a \code{Date}.

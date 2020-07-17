@@ -7,13 +7,13 @@
 isStringAnInteger(x)
 }
 \arguments{
-\item{x}{\code{character} vector}
+\item{x}{\code{character} vector.}
 }
 \value{
 Return a \code{logical} vector indicating, for each element of \code{x}, if the string correspond to an integer.
 }
 \description{
-Check if elements of a \code{character} vector are integers
+Check if elements of a \code{character} vector are integers.
 }
 \details{
 Use the function \code{isStringSciNumber} to identify numbers in their scientific notation.

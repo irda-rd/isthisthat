@@ -4,7 +4,7 @@
 \alias{isStringADate}
 \title{Identify valid dates}
 \usage{
-isStringADate(x, format = ("\%Y-\%m-\%d"))
+isStringADate(x, format = "\%Y-\%m-\%d")
 }
 \arguments{
 \item{x}{\code{character} vector.}
