@@ -34,5 +34,23 @@ isStringCanBeADate <- function(x, origin = as.Date("1899-12-30"), format=("%Y-%m
   }
   return(logicalCanBeADate)
 }
-
-
+#----------------------------------------------------------
+# #' @title Conversion of decimal separator
+# #' @description Convert decimal separator for string that represent a number.
+# #' @param x vector of class \code{character}
+# #' @param from \code{character}, initial separator. By default \code{from = ","}.
+# #' @param to \code{character}, final separator. By default \code{to = "."}.
+# #' @return Return \code{x} with decimal separator converted.
+# #' @details No change is brought if \code{x} is not of class \code{character}.
+# #' @examples
+# #' x <- c("12", "1.2", "1,2", "1,A")
+# #' convDecimalSeparator (x)
+# #' convDecimalSeparator (x, from = ".", to = ",")
+# #'
+convDecimalSeparator <- function(x, from = ",", to = "."){
+  if(class(x) == "character"){
+    iFromNumber <- isStringANumber(x, from)
+    x[iFromNumber] <- gsub(pattern = paste0("\\", from), replacement = paste0("\\", to), x[iFromNumber])
+  }
+  return(x)
+}

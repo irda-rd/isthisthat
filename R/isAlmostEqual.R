@@ -10,13 +10,15 @@
 #' @export
 #' @examples
 #' #Comparison between isEqual and isAlmostEqual
-#' ##For two numeric vectors (4th case is not equal, but is almost equal given the tol)
+#' ##For two numeric vectors 
+#' ##(4th case is not equal, but is almost equal given the tol)
 #' x <- c(NA, 1, 1.1, 1.000000001, 123456789.123456789, 1000000)
 #' y <- c(NA, 1, 1.1, 1.000000002, 123456789.123456789, 1000000)
 #' isEqual(x, y)
 #' isAlmostEqual(x, y)
 #'
-#' #For a numeric and a character vector (5th case have more than 15 significative numbers, 6th case = is a change in notation)
+#' #For a numeric and a character vector 
+#' ##(5th case have more than 15 significative numbers, 6th case = is a change in notation)
 #' xChar <- c(NA, "1", "1.1", "1.000000001", "123456789.123456789", "1000000")
 #' isEqual(x, xChar)
 #' isAlmostEqual(x, xChar)

@@ -1,23 +1,11 @@
 Package: isthisthat
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.1
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: GPL-3
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 6.1.1
-
-Package: cnd
-Type: Package
-Title: Is this that
-Version: 1.2
+Title: A representation package for strings and numbers
+Version: 0.1.2
 Authors@R: c(person("Alexandre", "Leblanc", role = c("aut", "cre"), email = "alexandre.leblanc@irda.qc.ca"),
-              person("Christine", "Landry", role = "rth", email = "christine.landry@irda.qc.ca")
-Description: Description
+              person("Christine", "Landry", role = "rth", email = "christine.landry@irda.qc.ca"),
+              person("Research and development institute for agri-environment (IRDA)", role = "cph"))
+Description: The package check the representation and equality of strings and numbers. All functions determine if an object this is of the form or equal to tha and return a logical object of the same dimension.
 License: GPL-3
 Copyright: Research and development institute for agri-environment (IRDA)
 URL: https://github.com/irda-rd/isthisthat, https://www.irda.qc.ca/en/
@@ -25,4 +13,5 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Imports:
-        dplyr
+    methods,
+    stringr
