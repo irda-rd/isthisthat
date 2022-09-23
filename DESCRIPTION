@@ -7,7 +7,7 @@ Authors@R: c(person("Alexandre", "Leblanc", role = c("aut", "cre"), email = "ale
               person("Research and development institute for agri-environment (IRDA)", role = "cph"))
 Description: The package check the representation and equality of strings and numbers. All functions determine if an object this is of the form or equal to that and return a logical object of the same dimension.
 License: GPL-3
-This work was supported by "Ministère de l'Agriculture, des Pêcheries et de l'Alimentation du Québec (MAPAQ)"
+This work was supported by Ministère de l'Agriculture, des Pêcheries et de l'Alimentation du Québec (MAPAQ)
 Copyright: Research and development institute for agri-environment (IRDA)
 URL: https://github.com/irda-rd/isthisthat, https://www.irda.qc.ca/en/
 Encoding: UTF-8
